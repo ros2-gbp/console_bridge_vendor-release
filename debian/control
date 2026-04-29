@@ -1,0 +1,13 @@
+Source: ros-lyrical-console-bridge-vendor
+Section: misc
+Priority: optional
+Maintainer: Scott K Logan <scott@openrobotics.org>
+Build-Depends: debhelper (>= 9.0.0), libconsole-bridge-dev, ros-lyrical-ament-cmake, ros-lyrical-ament-cmake-vendor-package, ros-lyrical-ament-lint-auto <!nocheck>, ros-lyrical-ament-lint-common <!nocheck>, ros-lyrical-performance-test-fixture <!nocheck>, ros-lyrical-ros-workspace
+Homepage: https://github.com/ros/console_bridge
+Standards-Version: 3.9.2
+
+Package: ros-lyrical-console-bridge-vendor
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libconsole-bridge-dev, ros-lyrical-ros-workspace
+Description: Wrapper around console_bridge, providing nothing but a dependency on console_bridge, on some systems.
+ On others, it provides an ExternalProject build of console_bridge.
